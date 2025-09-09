@@ -13,4 +13,4 @@ metadata:
 spec:
   interval: 10m
   timeout: 1m
-  url: https://release.daocloud.io/chartrepo/cloudtty
+  url: https://cloudtty.github.io/cloudtty
