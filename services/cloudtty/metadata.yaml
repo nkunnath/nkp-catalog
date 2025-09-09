@@ -1,15 +1,14 @@
 displayName: cloudtty
 description: This is the cloudtty terminal.
-allowMultipleInstances: false
 category:
-  - general
+- AI
 type: catalog
+allowMultipleInstances: false
 scope:
-  - workspace
+- workspace
 licensing:
-  - Ultimate
-  - Enterprise
-certifications:
+- Ultimate
+- Enterprise
 overview: |-
   ## Disclaimer
 

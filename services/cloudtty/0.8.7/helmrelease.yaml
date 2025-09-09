@@ -14,18 +14,12 @@ spec:
         name: cloudtty
         namespace: ${releaseNamespace}
       version: 0.8.7
-  interval: 1m
+  interval: 1m0s
   install:
     createNamespace: true
     crds: CreateReplace
-    remediation:
-      retries: 30
-  upgrade:
-    crds: CreateReplace
-    remediation:
-      retries: 30
+  targetNamespace: cloudtty
   releaseName: cloudtty
-  targetNamespace: ${releaseNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: cloudtty-0.8.7-defaults

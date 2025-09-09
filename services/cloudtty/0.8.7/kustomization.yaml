@@ -4,4 +4,4 @@ resources:
 # - traefik.yaml
 - helmrelease.yaml
 - cloudshell.yaml
-- ../../../helm-repositories/cloudtty
+- ../../../helm-repositories/cloudtty/cloudtty.yaml

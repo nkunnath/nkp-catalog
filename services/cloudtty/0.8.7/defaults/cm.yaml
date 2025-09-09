@@ -5,5 +5,4 @@ metadata:
   name: cloudtty-0.8.7-defaults
   namespace: ${releaseNamespace}
 data:
-  values.yaml: |
-    
+  values.yaml: ""
