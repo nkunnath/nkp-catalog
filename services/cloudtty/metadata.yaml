@@ -3,6 +3,7 @@ description: This is the cloudtty terminal.
 allowMultipleInstances: false
 category:
   - general
+type: catalog
 scope:
   - workspace
 licensing:
