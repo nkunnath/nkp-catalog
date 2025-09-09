@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  annotations:
+    metadata.weave.works/description: This is the source location for the Cloudtty terminal's helm chart.
+  name: cloudtty
+  namespace: ${releaseNamespace}
+  labels:
+    app.kubernetes.io/component: ui
+    app.kubernetes.io/name: cloudtty-terminal
+    app.kubernetes.io/part-of: cloudtty
+spec:
+  interval: 10m
+  timeout: 1m
+  url: https://release.daocloud.io/chartrepo/cloudtty
