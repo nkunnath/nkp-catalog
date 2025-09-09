@@ -2,12 +2,12 @@ displayName: cloudtty
 description: This is the cloudtty terminal.
 allowMultipleInstances: false
 category:
-- general
+  - general
 scope:
-- workspace
+  - workspace
 licensing:
-- Ultimate
-- Enterprise
+  - Ultimate
+  - Enterprise
 certifications:
 overview: |-
   ## Disclaimer
