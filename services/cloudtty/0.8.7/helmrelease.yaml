@@ -28,5 +28,4 @@ spec:
   targetNamespace: ${releaseNamespace}
   valuesFrom:
   - kind: ConfigMap
-    name: cloudtty-defaults
-    valuesKey: cm.yaml
+    name: cloudtty-0.8.7-defaults
