@@ -4,8 +4,6 @@ kind: HelmRelease
 metadata:
   name: cloudtty-operator
   namespace: ${releaseNamespace}
-  annotations:
-    metadata.weave.works/description: This is the cloudtty terminal.
 spec:
   chart:
     spec:
@@ -15,8 +13,10 @@ spec:
         kind: HelmRepository
         name: cloudtty
         namespace: ${releaseNamespace}
+      version: 0.8.7
   interval: 1m
   install:
+    createNamespace: true
     crds: CreateReplace
     remediation:
       retries: 30
@@ -28,5 +28,4 @@ spec:
   targetNamespace: ${releaseNamespace}
   valuesFrom:
   - kind: ConfigMap
-    name: cloudtty-defaults
-    valuesKey: cm.yaml
+    name: cloudtty-0.8.7-defaults
