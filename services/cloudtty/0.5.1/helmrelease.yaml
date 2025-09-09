@@ -18,11 +18,11 @@ spec:
   install:
     createNamespace: true
     crds: CreateReplace
-  targetNamespace: cloudtty
+  targetNamespace: ${releaseNamespace}
   releaseName: cloudtty
   valuesFrom:
-  - kind: ConfigMap
-    name: cloudtty-0.5.1-defaults
+    - kind: ConfigMap
+      name: cloudtty-0.5.1-defaults
 ---
 apiVersion: cloudshell.cloudtty.io/v1alpha1
 kind: CloudShell
