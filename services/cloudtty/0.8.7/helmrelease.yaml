@@ -21,8 +21,8 @@ spec:
   targetNamespace: cloudtty
   releaseName: cloudtty
   valuesFrom:
-  - kind: ConfigMap
-    name: cloudtty-0.8.7-defaults
+    - kind: ConfigMap
+      name: cloudtty-0.8.7-defaults
 ---
 apiVersion: cloudshell.cloudtty.io/v1alpha1
 kind: CloudShell
