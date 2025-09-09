@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: cloudtty-operator
+  name: cloudtty
   namespace: ${releaseNamespace}
 spec:
   chart:
@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: cloudtty
         namespace: ${releaseNamespace}
-      version: 0.8.7
+      version: 0.5.1
   interval: 1m0s
   install:
     createNamespace: true
@@ -21,8 +21,8 @@ spec:
   targetNamespace: cloudtty
   releaseName: cloudtty
   valuesFrom:
-    - kind: ConfigMap
-      name: cloudtty-0.8.7-defaults
+  - kind: ConfigMap
+    name: cloudtty-0.5.1-defaults
 ---
 apiVersion: cloudshell.cloudtty.io/v1alpha1
 kind: CloudShell
